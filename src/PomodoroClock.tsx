@@ -2,7 +2,7 @@ import * as React from 'react';
 import { usePomodoro } from './usePomodoro';
 
 function PomodoroClock() {
-  let initialTime="25:00";
+  let initialTime = '25:00';
   const { startPomodoro, stopPomodoro, resetPomodoro, time } = usePomodoro(
     initialTime
   );
