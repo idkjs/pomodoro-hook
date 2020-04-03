@@ -1,8 +1,25 @@
-import { compose } from './fp';
-import { mod60, isZero } from './math';
-import { first, second } from './collection';
-import { splitByColon, toString } from './string';
+// fp compose
+const compose = (...fns: any[]) => (value: any) =>
+  fns.reduceRight((acc, fn) => fn(acc), value);
 
+// collection handling helper functions
+const first = (list: any) => list[0];
+const second = (list: any) => list[1];
+
+// math helper functions
+const mod = (divisor: number) => (dividend: number) =>
+  ((dividend % divisor) + divisor) % divisor;
+const mod60 = mod(60);
+
+const isZero = (number: number) => number === 0;
+
+// string mangling helper functions
+const split = (separator: string) => (text: string) => text.split(separator);
+const splitByColon = split(':');
+
+const toString = (number: number) => number.toString();
+
+// calculate time using above helpers
 const getHour = compose(first, splitByColon);
 const getMinute = compose(second, splitByColon);
 
@@ -31,8 +48,14 @@ const calculateNewTime = (startTime: string) => {
   return `${newHour}:${newMinute}`;
 };
 
-// most of these are for testing purposes
 export {
+  first,
+  second,
+  compose,
+  mod60,
+  isZero,
+  splitByColon,
+  toString,
   getHour,
   getMinute,
   isSingleDigit,

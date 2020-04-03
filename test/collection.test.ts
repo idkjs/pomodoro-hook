@@ -1,4 +1,4 @@
-import { first, second } from '../src/fp/collection';
+import { first, second } from '../src/pomodoro';
 
 test('gets the first element from an array', () => {
   expect(first([1, 2])).toBe(1);

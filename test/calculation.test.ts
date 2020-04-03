@@ -1,4 +1,4 @@
-import * as calc from '../src/fp/calculation';
+import * as calc from '../src/pomodoro';
 
 describe('getHour', () => {
   test('gets hour from string time', () => {

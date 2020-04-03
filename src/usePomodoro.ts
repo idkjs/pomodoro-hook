@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { calculateNewTime } from './fp/calculation';
+import { calculateNewTime } from './pomodoro';
 // export interface PomodoroSettings {
 //   initialTime: string;
 // }

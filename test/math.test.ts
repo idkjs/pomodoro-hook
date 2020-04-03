@@ -1,4 +1,4 @@
-import { mod60, isZero } from '../src/fp/math';
+import { mod60, isZero } from '../src/pomodoro';
 
 describe('mod60', () => {
   test('various numbers modulo 60', () => {
