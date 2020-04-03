@@ -22,12 +22,13 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "demo": "cd example && parcel index.html",
+    "demo": "parcel example/index.html",
     "build": "tsdx build",
+    "build:demo": "cd example && parcel build index.html",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
-    "deploy:demo": "cd example && parcel build index.html && surge dist pomodoro-hook.surge.sh"
+    "deploy": "surge example/dist pomodoro-hook.surge.sh"
   },
   "peerDependencies": {
     "react": ">=16"

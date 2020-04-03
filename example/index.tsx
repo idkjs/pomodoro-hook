@@ -20,4 +20,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<PomodoroClock />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
