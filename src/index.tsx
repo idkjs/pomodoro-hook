@@ -1,3 +1,3 @@
 export { usePomodoro } from './usePomodoro';
 
-export { PomodoroClock } from './PomodoroClock';
+export { PomodoroClock } from './clock/PomodoroClock';

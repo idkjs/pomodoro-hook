@@ -14,12 +14,15 @@
     "dist",
     "src"
   ],
+  "sideEffects":[
+    "./src/clock/clock.css"
+  ],
   "engines": {
     "node": ">=10"
   },
   "scripts": {
     "start": "tsdx watch",
-    "demo": "parcel example/index.html",
+    "demo": "cd example && parcel index.html",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
@@ -50,8 +53,13 @@
     "husky": "^4.2.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "rollup-plugin-postcss": "^2.5.0",
     "tsdx": "^0.13.1",
     "tslib": "^1.11.1",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.5",
+    "cssnano": "^4.1.10"
   }
 }
