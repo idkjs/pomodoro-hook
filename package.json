@@ -24,7 +24,7 @@
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
-    "deploy:demo": "parcel build example/index.html -d demo && surge demo pomodoro-lambda-hook-ts.surge.sh"
+    "deploy:demo": "cd example && parcel build index.html && surge dist pomodoro-lambda-hook-ts.surge.sh"
   },
   "peerDependencies": {
     "react": ">=16"
