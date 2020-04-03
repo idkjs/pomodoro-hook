@@ -12,6 +12,7 @@
   },
   "scripts": {
     "start": "tsdx watch",
+    "demo":"parcel example/index.html",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
