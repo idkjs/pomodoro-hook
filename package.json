@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "demo":"parcel example/index.html",
+    "demo": "parcel example/index.html",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
@@ -32,9 +32,9 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-pomodoro-lamda",
+  "name": "pomodoro-lamda-ts",
   "author": "Alain Armand <aarmand.inbox@gmail.com>",
-  "module": "dist/react-pomodoro-lamda.esm.js",
+  "module": "dist/pomodoro-lamda-ts.esm.js",
   "devDependencies": {
     "@types/jest": "^25.1.5",
     "@types/react": "^16.9.32",
