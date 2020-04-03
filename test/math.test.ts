@@ -1,4 +1,4 @@
-import { mod60, isZero } from '../src/pomodoro';
+import { mod60, isZero } from '../src/hook';
 
 describe('mod60', () => {
   test('various numbers modulo 60', () => {

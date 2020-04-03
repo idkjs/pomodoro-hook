@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { usePomodoro } from '../usePomodoro';
-import './clock.css';
+// import './clock.css';
 
 function PomodoroClock() {
   let initialTime = '25:00';

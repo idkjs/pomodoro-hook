@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { calculateNewTime } from './pomodoro';
+import { calculateNewTime } from './hook';
 
 export type initialTime = string;
 

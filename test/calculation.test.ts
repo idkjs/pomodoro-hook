@@ -1,4 +1,4 @@
-import * as calc from '../src/pomodoro';
+import * as calc from '../src/hook';
 
 describe('getHour', () => {
   test('gets hour from string time', () => {

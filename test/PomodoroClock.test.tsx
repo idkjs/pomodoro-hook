@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { PomodoroClock } from '../src';
+import { PomodoroClock } from '../src/clock/PomodoroClock';
 
 describe('it', () => {
   it('renders without crashing', () => {

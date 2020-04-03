@@ -1,4 +1,4 @@
-import { splitByColon, toString } from '../src/pomodoro';
+import { splitByColon, toString } from '../src/hook';
 
 describe('splitByColon', () => {
   test('with colon', () => {
