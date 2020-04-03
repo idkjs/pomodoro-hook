@@ -4,6 +4,14 @@
 
 This is a react hook wrapper around the functionality of [pomo-lambda](https://github.com/leandrotk/pomo-lambda)
 
+## Installation
+
+```sh
+yarn add https://github.com/idkjs/pomodoro-lamda-hook-ts.git
+npm install https://github.com/idkjs/pomodoro-lamda-hook-ts.git
+pnpm install https://github.com/idkjs/pomodoro-lamda-hook-ts.git
+```
+
 ## Use The Hook
 
 Use the hook to make and style your own clock, import the `usePomodoro` function, create your component the pass it an intial time `<MyClock initialTime="25:00" />`:
