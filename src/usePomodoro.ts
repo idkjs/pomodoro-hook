@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import { calculateNewTime } from './pomodoro';
-// export interface PomodoroSettings {
-//   initialTime: string;
-// }
+
 export type initialTime = string;
 
 export interface PomodoroResult {
@@ -13,9 +11,6 @@ export interface PomodoroResult {
   resetPomodoro: () => void;
 }
 export const usePomodoro = (initialTime: initialTime): PomodoroResult => {
-  // let timerId: number;
-  // const { initialTime } = settings;
-
   const finishedTime = '00:00';
 
   const [timerId, setTimerId] = useState<number | null>(null);
@@ -34,13 +29,7 @@ export const usePomodoro = (initialTime: initialTime): PomodoroResult => {
   const updateTime = () => {
     const timeEl = document.getElementById('time');
 
-    // At this point `myComponent` is of type HTMLElement | null
     if (timeEl) {
-      // Within the block of this statement, `myComponent` must contain a truthy value,
-      // so the `null` type can be removed from the union type.
-      //
-      // This means that within this block, `myComponent` is of type `HTMLElement` and TypeScript
-      // is happy for us to access its `innerHTML` property
       let time = timeEl.textContent;
       let startTime = time;
       if (startTime) {

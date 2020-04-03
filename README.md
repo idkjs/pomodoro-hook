@@ -1,6 +1,6 @@
-## pomodoro-lambda-hook-ts
+## pomodoro-lambda-hook
 
-## Example: [pomodoro-lambda-hook-ts.surge.sh](https://pomodoro-lambda-hook-ts.surge.sh)
+## Example: [pomodoro-lambda-hook.surge.sh](https://pomodoro-lambda-hook.surge.sh)
 
 This is a react hook wrapper around the functionality of [pomo-lambda](https://github.com/leandrotk/pomo-lambda)
 

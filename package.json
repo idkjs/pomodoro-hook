@@ -3,10 +3,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/idkjs/pomodoro-lambda-hook-ts.git"
+    "url": "git+https://github.com/idkjs/pomodoro-lambda-hook.git"
   },
   "bugs": {
-    "url": "https://github.com/idkjs/pomodoro-lambda-hook-ts/issues"
+    "url": "https://github.com/idkjs/pomodoro-lambda-hook/issues"
   },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -24,7 +24,7 @@
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
-    "deploy:demo": "cd example && parcel build index.html && surge dist pomodoro-lambda-hook-ts.surge.sh"
+    "deploy:demo": "cd example && parcel build index.html && surge dist pomodoro-lambda-hook.surge.sh"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -40,9 +40,9 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "pomodoro-lambda-hook-ts",
+  "name": "pomodoro-lambda-hook",
   "author": "Alain Armand <aarmand.inbox@gmail.com>",
-  "module": "dist/pomodoro-lambda-hook-ts.esm.js",
+  "module": "dist/pomodoro-lambda-hook.esm.js",
   "devDependencies": {
     "@types/jest": "^25.1.5",
     "@types/react": "^16.9.32",
