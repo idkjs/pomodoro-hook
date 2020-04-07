@@ -7,9 +7,9 @@ This is a react hook wrapper around the functionality of [pomo-lambda](https://g
 ## Installation
 
 ```sh
-yarn add https://github.com/idkjs/pomodoro-lamda-hook-ts.git
-npm install https://github.com/idkjs/pomodoro-lamda-hook-ts.git
-pnpm install https://github.com/idkjs/pomodoro-lamda-hook-ts.git
+yarn add https://github.com/idkjs/pomodoro-hook.git
+npm install https://github.com/idkjs/pomodoro-hook.git
+pnpm install https://github.com/idkjs/pomodoro-hook.git
 ```
 
 ## Use The Hook
@@ -17,7 +17,7 @@ pnpm install https://github.com/idkjs/pomodoro-lamda-hook-ts.git
 Use the hook to make and style your own clock, import the `usePomodoro` function, create your component the pass it an intial time `<MyClock initialTime="25:00" />`:
 
 ```js
-import { usePomodoro } from 'pomodoro-clock-hook-ts';
+import { usePomodoro } from 'pomodoro-hook';
 
 function MyClock({ initialTime }) {
   const { startPomodoro, stopPomodoro, resetPomodoro, time } = usePomodoro(
@@ -80,7 +80,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 Just want the clock with the default `25:00` minutes:
 
 ```js
-import { PomodoroClock } from 'pomodoro-clock-hook-ts';
+import { PomodoroClock } from 'pomodoro-hook';
 
 const App = () => {
   return (
